@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'header header header header';
+}
 header{
     border-radius: 0 0 40px 40px;
     background: #5956A6;
@@ -10,6 +17,7 @@ header{
     color: white;
     align-items: center;
     padding: 25px;
+    grid-area: header;
 }
 header>input{
     width: 271px;
@@ -32,4 +40,27 @@ header>p{
 }
 header>img{
     padding-left: 15px;
+}
+.manga{
+    background:cornflowerblue;
+}
+.fantasia{
+    background: cornflowerblue;
+}
+.romance{
+    background: cornflowerblue;
+}
+
+@media only screen and (max-width: 600px)
+{
+    header>input{
+        width: 271px;
+        height: 32px;
+        outline: none;
+        border: none;
+        border-radius:10px 0 0 10px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
 }
