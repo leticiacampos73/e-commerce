@@ -5,43 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+    </style>
     <title>Editora</title>
 </head>
 <body>
     <header>
         <img src="Img/image 1.png">
-        <p>Produtos</p>
-        <p>Quem somos</p>
-        <p>Contato</p>
-        
-        <input type="search" placeholder="Pesquise">
-        <div><img src="Img/Group 2.svg"></div>
+        <a href="quemsomos.html"><p>Quem somos</p></a>
+        <a href="contato.html"><p>Contato</p></a>
+        <div class="busca">
+            <input type="search" placeholder="Pesquise"><img src="Img/Group 2.svg">
+        </div>
         <img src="Img/user.svg">
         <img src="Img/Group 1.svg">
     </header>
-    <div class="grid">
-        <div class="manga">
-            <h1>Mangá</h1>
-            <img src="manga/manga1.png">
-            <img src="manga/manga2.png">
-            <img src="manga/manga3.png">
-            <img src="manga/manga4.png">
-        </div>
-        <div class="fantasia">
-            <h1>Fantasia</h1>
-            <img src="fantasia/fantasia1.png">
-            <img src="fantasia/fantasia2.png">
-            <img src="fantasia/fantasia3.png">
-            <img src="fantasia/fantasia4.png">
-        </div>
-        <div class="romance">
-            <h1>Romance</h1>
-            <img src="roamance/romance1.png">
-            <img src="roamance/romance2.png">
-            <img src="roamance/romance3.png">
-            <img src="roamance/romance4.png">
-        </div>
-    </div>
-    
+    <div class="banner"></div>
+    <main>
+            <a href="manga.html">
+            <div>
+                <h1>Mangá</h1>
+                <img src="manga/manga1.png">
+                <img src="manga/manga2.png">
+                <img src="manga/manga3.png">
+                <img src="manga/manga4.png">
+            </div>
+        </a>
+        <a href="famtasia.html">
+            <div>
+                <h1>Fantasia</h1>
+                <img src="fantasia/fantasia1.png">
+                <img src="fantasia/fantasia2.png">
+                <img src="fantasia/fantasia3.png">
+                <img src="fantasia/fantasia4.png">
+            </div>
+        </a>
+        <a href="romance.html">
+            <div>
+                <h1>Romance</h1>
+                <img src="roamance/romance1.png">
+                <img src="roamance/romance2.png">
+                <img src="roamance/romance3.png">
+                <img src="roamance/romance4.png">
+            </div>
+        </a>
+    </main>
+    <footer>
+        <p>Quem somos</p>
+        <p>Contato</p>
+        
+        <a class="creditos" href="https://br.freepik.com/fotos-vetores-gratis/dia-do-livro">Dia do livro vetor criado por freepik - br.freepik.com</a>
+    </footer>
 </body>
 </html>
